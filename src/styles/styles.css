@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 16px;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.hero {
+  padding: 5px 120px;
+  color: white;
+  background-color: #192734;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.search input {
+  padding: 12px;
+  font-size: 14px;
+  height: 50px;
+  width: 45%;
+  border: none;
+  margin-bottom: 75px;
+  border-radius: 1rem;
+}
+
+.search button {
+  height: 50px;
+  padding: 12px;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+  min-width: 120px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.movie {
+  height: 430px;
+  width: 350px;
+  padding: 200px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.movie h2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255,100,100,0.5);
+  margin: 0;
+  padding: 20px 10px;
+  color:#fff;
+}
+
+.movie p {
+  padding: 12px;
+  position: absolute;
+  font-size: 12px;
+  width: 100%;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(6, 6, 6, 0.5);
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.movie p:hover {
+  opacity: 1;
+}
+
+.body {
+  padding: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
